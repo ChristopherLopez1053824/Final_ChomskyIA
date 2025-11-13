@@ -610,7 +610,7 @@ with tab5:
     g1 = st.text_area("Gramática 1:", height=180, key="eq_g1")
     g2 = st.text_area("Gramática 2:", height=180, key="eq_g2")
 
-    max_len = st.slider("Longitud máxima de derivación:", 2, 10, 6)
+    max_len = 6
 
     if st.button("Comparar", key="btn_comparar_gramaticas"):
         msg, L1, L2 = comparar_gramaticas(g1, g2, max_len)
